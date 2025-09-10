@@ -36,7 +36,7 @@
   We develop and test an optimal control framework for mitigating extreme weather in simplified atmospheric systems. Using Lorenz 63 and Lorenz 84 models, we show that small perturbations, guided by local Lyapunov exponents and ensemble forecasts, can keep weather trajectories within safe boundaries while minimizing energy use.
 
   Control strategies are robust to noise and uncertainty, demonstrating the feasibility of real-time adaptive interventions in chaotic systems. These results provide a foundation for scaling Weather Jiu-Jitsu to more realistic atmospheric models.
-  ## 🗺️ Interactive Visualizations
+
   <p align="center">
     <a href="https:///moyan-liu.github.io/weatherjiujitsu/media/nhmm_3d.html">
       <strong>🗺️ View Interactive 3D Map for L84 control </strong>
