@@ -40,7 +40,7 @@ This project is led by [Prof. Upmanu Lall](https://en.wikipedia.org/wiki/Upmanu_
   Control strategies are robust to noise and uncertainty, demonstrating the feasibility of real-time adaptive interventions in chaotic systems. These results provide a foundation for scaling Weather Jiu-Jitsu to more realistic atmospheric models.
 
   <p align="center">
-    <a href="https:///moyan-liu.github.io/weatherjiujitsu/media/nhmm_3d.html">
+    <a href="https:///moyan-liu.github.io/weatherjiujitsu/media/nhmm_3d_l84.html">
       <strong>🗺️ View Interactive 3D Map for L84 control </strong>
     </a>
     <br>
