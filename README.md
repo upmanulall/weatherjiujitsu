@@ -78,18 +78,23 @@
   PDFs and final posters will be added as acceptance progresses.
 
     1. **[Weather Jiu Jitsu: A 21st century paradigm to leverage nature's power to mitigate some Compound, Concurrent, and Cascading Weather Hazards in a Changing Climate](./publication/AGU-poster-2025/1.pdf)**
-  This talk will outline the potential for using small, strategically timed interventions to steer the atmosphere away from persistent weather regimes that produce compound extremes—floods, droughts, heatwaves, and more—drawing on idealized models and deep learning emulators to propose a new global-scale mitigation strategy.
+  
+  This talk outlines the potential for using small, strategically timed interventions to steer the atmosphere away from persistent weather regimes that produce compound extremes—floods, droughts, heatwaves, and more—drawing on idealized models and deep learning emulators to propose a new global-scale mitigation strategy.
 
     2. **[Steering Tropical Cyclones with Small Perturbations of the Jet Stream in Experiments with Deep Learning Foundation Models](./publication/AGU-poster-2025/2.pdf)**
+  
   Explores the feasibility of shifting tropical cyclone tracks away from vulnerable regions by subtly influencing upstream steering winds using the Aurora deep learning model.
 
     3. **[Toward Controlling Atmospheric Rivers with Deep Learning Foundation Models and Adaptive Perturbation](./publication/AGU-poster-2025/3.pdf)**
+
   Applies the Weather Jiu-Jitsu framework to Atmospheric Rivers, using Aurora to identify sensitive spatiotemporal zones where small interventions may redirect AR trajectories pre-landfall.
 
     4. **[Toward Adaptive Control of Extreme Weather Regimes Using the Seasonally Forced Lorenz-84 Model](./publication/AGU-poster-2025/4.pdf)**
+  
   Extends previous idealized control work to a seasonally forced L84 system, showing that weather regime frequency and intensity can be adaptively modulated using targeted, time-sensitive nudges.
 
     5. **[Adaptive Chaos Control with Deep Learning of Atmospheric Dynamics to leverage the power of the atmospheric circulation with nudges to move or defuse storms and avert catastrophic flooding](./publication/AGU-poster-2025/5.pdf)**
+  
   Presents Weather Jiu-Jitsu as an alternative to traditional flood infrastructure, exploring how small, well-timed perturbations to atmospheric circulation—supported by idealized models and deep learning emulators—could reduce the intensity or reroute flood-producing storms to mitigate impacts.
 
 ---
