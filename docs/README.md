@@ -6,7 +6,7 @@ This directory contains comprehensive documentation for the Weather Jiu-Jitsu re
 
 ### [Theory](./theory/)
 Foundational concepts and mathematical frameworks
-- **[Chaos Control](./theory/chaos-control.md)** - Lorenz models and dynamical systems
+- **[Chaos Control](./theory/chaos-theory.md)** - Lorenz models and dynamical systems
 - **[Atmospheric Dynamics](./theory/atmospheric-dynamics.md)** - Weather system physics
 - **[Adaptive Control](./theory/adaptive-control.md)** - Control theory applications
 
