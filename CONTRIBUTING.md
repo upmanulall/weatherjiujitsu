@@ -6,14 +6,13 @@ We welcome contributions from researchers, developers, students, and stakeholder
 
 ### 🔬 **Research Contributions**
 - **Theoretical Development**: Mathematical frameworks, control theory, chaos dynamics
-- **Modeling & Simulation**: Atmospheric models, case studies, numerical experiments  
-- **Data Analysis**: Weather pattern analysis, intervention effectiveness studies
-- **Field Studies**: Observational data collection and analysis
+- **Modeling & Simulation**: Atmospheric models, foundation model, case studies, numerical experiments  
+- **Data Analysis**: Weather pattern analysis, intervention effectiveness studies, machine learning, atmospheric/weahter data analysis
 
 ### 💻 **Technical Contributions**
-- **Software Development**: Control algorithms, simulation tools, analysis frameworks
-- **Model Integration**: Coupling Weather Jiu-Jitsu with existing weather models
-- **Visualization**: Interactive tools for understanding atmospheric dynamics
+- **Software Development**: Control algorithms, simulation tools, analysis frameworks, optimization method
+- **Model Integration**: Coupling Weather Jiu-Jitsu idea with existing weather models (e.g. Auroa, Chornos)
+- **Visualization**: Interactive tools for understanding atmospheric dynamics, perturbation effect
 - **Documentation**: Technical guides, tutorials, API documentation
 
 ### 🌍 **Policy & Ethics**
@@ -211,20 +210,6 @@ Many contributions can be structured to provide academic credit:
 - **Thesis Work**: MS/PhD research aligned with project goals
 - **Course Projects**: Class assignments contributing to project objectives
 
-## 🔍 Quality Assurance
-
-### Peer Review Process
-1. **Internal Review**: Team members review all contributions
-2. **Expert Review**: External experts evaluate technical content
-3. **Community Feedback**: Open discussion of proposed changes
-4. **Revision Process**: Iterative improvement based on feedback
-5. **Final Approval**: Team leads approve integration of contributions
-
-### Standards & Best Practices
-- **Scientific Rigor**: All research must meet appropriate disciplinary standards
-- **Reproducibility**: Provide sufficient detail for replication
-- **Transparency**: Open discussion of methods, assumptions, and limitations
-- **Continuous Improvement**: Regular review and updating of procedures
 
 ## 📜 Recognition & Attribution
 
@@ -240,19 +225,6 @@ Many contributions can be structured to provide academic credit:
 - **Data Sharing**: Datasets made available under appropriate licenses
 - **Code Licensing**: Software released under permissive open-source licenses
 
----
-
-## 🌟 Join the Movement
-
-Weather Jiu-Jitsu represents a fundamental shift in how humanity approaches extreme weather. By contributing to this research, you're helping develop capabilities that could save thousands of lives and prevent billions in damages.
-
-**Every contribution matters** - whether you're a world-class atmospheric scientist or an undergraduate student, your unique perspective and skills can advance our understanding and capabilities.
-
-**Ready to contribute?** 
-1. Read our [research overview](https://qhuang62.github.io/weatherjiujitsu)
-2. Browse current [issues](https://github.com/qhuang62/weatherjiujitsu/issues) and [discussions](https://github.com/qhuang62/weatherjiujitsu/discussions)  
-3. Contact us at qhuang62@asu.edu to discuss your ideas
-4. Join our community and help transform weather science
 
 ---
 
