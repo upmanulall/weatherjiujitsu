@@ -11,7 +11,7 @@ We welcome contributions from researchers, developers, students, and stakeholder
 
 ### 💻 **Technical Contributions**
 - **Software Development**: Control algorithms, simulation tools, analysis frameworks, optimization method
-- **Model Integration**: Coupling Weather Jiu-Jitsu idea with existing weather models (e.g. Auroa, Chornos)
+- **Model Integration**: Coupling Weather Jiu-Jitsu idea with existing weather models (e.g. Aurora, Chornos)
 - **Visualization**: Interactive tools for understanding atmospheric dynamics, perturbation effect
 - **Documentation**: Technical guides, tutorials, API documentation
 
