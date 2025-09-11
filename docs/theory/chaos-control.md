@@ -1,4 +1,4 @@
-# Chaos Control Theory for Weather Systems
+# Chaos Theory for Weather Systems
 
 The theoretical foundation of Weather Jiu-Jitsu lies in **adaptive chaos control** applied to atmospheric dynamics, inspired by Edward Lorenz's seminal work on deterministic chaotic systems.
 
@@ -40,46 +40,41 @@ dz/dt = bxy + xz - z
 
 ## ⚡ Control Mechanisms
 
-### Lyapunov Exponents (LEs)
-**Purpose**: Quantify sensitivity to initial conditions and identify optimal perturbation timing
+### Lyapunov Exponents (LEs) & Local Lyapunov Exponents (LLEs)  
+**Purpose**: Detect instability and quantify sensitivity for timing perturbations  
 
-**Method**: 
-- Calculate local Lyapunov exponents in real-time
-- Target high-instability regions where small nudges have maximum effect
-- Avoid low-predictability zones during system transitions
+**Method**:  
+- Calculate local Lyapunov exponents along trajectories in real-time  
+- Flag high-instability regions where small nudges yield maximum leverage  
+- Use as a trigger to decide if/when control is applied  
 
-### Data Assimilation (DA)
-**Purpose**: Estimate current atmospheric state for control decisions
+### Hidden-State Detection (NHMM & Regime Clustering)  
+**Purpose**: Identify “danger zones” in latent dynamics and anticipate regime shifts  
 
-**Approach**:
-- Continuous state estimation using observational data
-- Ensemble Kalman filtering for uncertainty quantification
-- Real-time updates to control strategies
-
-### Model Predictive Control (MPC)
-**Purpose**: Apply directional forcing to steer systems toward desired states
-
-**Strategy**:
-- Forecast multiple trajectory scenarios
-- Optimize perturbation timing and magnitude
-- Adaptive feedback based on system response
+**Approach**:  
+- Apply Non-Homogeneous Hidden Markov Models (NHMMs) or clustering on model states  
+- Define hidden regimes associated with extreme or undesirable outcomes  
+- Trigger control when trajectories enter or approach these hidden states  
 
 ## 🎯 Control Strategies
 
-### 1. Conditional Perturbation
-**When**: Active extreme event (hurricane, AR) is detected
-**Approach**: Apply finite set of monitored nudges to alter trajectory
-**Timeline**: Hours to days
+### 1. Conditional Perturbation  
+**When**: Active extreme event (hurricane, AR) is detected  
+**Trigger**: LLEs signal instability or NHMM classifies event in “danger regime”  
+**Approach**: Apply finite, pre-tested nudges to shift trajectory  
+**Timeline**: Hours to days  
 
 ### 2. Preventive Nudging  
-**When**: Regular monitoring detects unfavorable regime transitions
-**Approach**: Sub-seasonal interventions to reduce probability of extreme regimes
-**Timeline**: Weeks to months
+**When**: Monitoring reveals system drifting toward unfavorable regimes  
+**Trigger**: NHMM flags latent state transition; LLE instability increases  
+**Approach**: Sub-seasonal, low-energy interventions to reduce risk of extremes  
+**Timeline**: Weeks to months  
 
-### 3. Regime Transition Control
-**When**: System approaches atmospheric blocking patterns
-**Approach**: Early intervention during high-instability transition periods
-**Timeline**: Days to weeks
+### 3. Regime Transition Control  
+**When**: System nears atmospheric blocking or major circulation shift  
+**Trigger**: Joint signal—LLE spike + NHMM transition probability > threshold  
+**Approach**: Early, bounded nudges to steer away from unstable transition paths  
+**Timeline**: Days to weeks  
 
 ## 🧮 Mathematical Framework
 
@@ -94,25 +89,45 @@ Where:
 - `f(x,t)` = natural atmospheric dynamics
 - `u(t)` = control perturbation (our "nudge")
 
-### Control Objective
-Minimize cost function:
-```
-J = ∫[Q(x-x_target)² + R·u²]dt
-```
+### 🎯 Control Objective  
 
-Where:
-- `Q` = state deviation penalty 
-- `R` = control effort penalty
-- `x_target` = desired atmospheric state
+We minimize the **total cost** of control over a prediction horizon. The objective balances two competing goals:  
+1. **Keep the system state near safe targets**  
+2. **Minimize perturbation energy**  
 
-### Perturbation Amplification
-The key insight: Natural atmospheric dynamics amplify small perturbations exponentially:
+**Discrete formulation (screenshot reference):**  
 
-```
-||δx(t)|| ≈ ||δx(0)|| · e^(λt)
-```
+\[
+\min_{\delta x_t} \; \sum_{t=1}^T \; u_t^2 \;+\; \lambda \sum_{j=1}^3 penalty_{t,j}(x_t)
+\]
 
-Where `λ` is the leading Lyapunov exponent.
+- \( u_t = \|\delta x_t\|_2 \): perturbation magnitude at time \(t\)  
+- \( penalty_{t,j}(x_t) \): deviation of state variable \(j\) from prescribed bounds \([l_j, h_j]\)  
+- \( \lambda \): trade-off weight between control energy and constraint enforcement  
+- Perturbations capped by \( D_{max} \) to prevent unrealistic forcing  
+
+**Continuous formulation (control theory form):**  
+
+\[
+J = \int \Big[ Q(x - x_{target})^2 \;+\; R \cdot u^2 \Big] \, dt
+\]
+
+- \( Q \): state deviation penalty  
+- \( R \): control effort penalty  
+- \( x_{target} \): desired atmospheric state  
+
+---
+
+### 🌪️ Perturbation Amplification  
+
+Atmospheric dynamics naturally amplify small nudges:  
+
+\[
+\|\delta x(t)\| \;\approx\; \|\delta x(0)\| \cdot e^{\lambda t}
+\]
+
+- \( \lambda \): leading Lyapunov exponent (LLE)  
+- Implication: **well-timed micro-nudges can have macro-scale impacts**  
 
 ## 🔬 Research Advances
 
