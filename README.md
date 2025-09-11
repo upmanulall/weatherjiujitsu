@@ -13,9 +13,7 @@
 
 > "Like martial arts for the atmosphere — using the system's own chaotic energy against itself."
 
-This project is led by [Prof. Upmanu Lall](https://en.wikipedia.org/wiki/Upmanu_Lall) in collaboration with researchers at  
-- 🌎 [Columbia Water Center](https://water.columbia.edu/)  
-- 💧 [ASU Water Institute](https://globalfutures.asu.edu/water-institute/)  
+This project is led by [Prof. Upmanu Lall](https://en.wikipedia.org/wiki/Upmanu_Lall) in collaboration with researchers at [Columbia Water Center](https://water.columbia.edu/) and [ASU Water Institute](https://globalfutures.asu.edu/water-institute/).  
 
 ## 🚀 Quick Start
 
