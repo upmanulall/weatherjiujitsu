@@ -13,6 +13,10 @@
 
 > "Like martial arts for the atmosphere — using the system's own chaotic energy against itself."
 
+This project is led by Prof. Upmanu Lall in collaboration with researchers at  
+- 🌎 [Columbia Water Center](https://water.columbia.edu/)  
+- 💧 [ASU Water Institute](https://globalfutures.asu.edu/water-institute/)  
+
 ## 🚀 Quick Start
 
 - **📖 [Read the Full Documentation](https://github.com/upmanulall/weatherjiujitsu/blob/main/docs/README.md)** - Complete research overview
