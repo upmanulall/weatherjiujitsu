@@ -19,8 +19,6 @@ Adaptive control theory provides the framework for real-time weather interventio
 
 ## 🎯 Control Architectures
 
-## 🎯 Control Strategies
-
 ### 1. Conditional Perturbation  
 **When**: Active extreme event (hurricane, AR) is detected  
 **Trigger**: LLEs signal instability or NHMM classifies event in “danger regime”  
@@ -38,6 +36,61 @@ Adaptive control theory provides the framework for real-time weather interventio
 **Trigger**: Joint signal—LLE spike + NHMM transition probability > threshold  
 **Approach**: Early, bounded nudges to steer away from unstable transition paths  
 **Timeline**: Days to weeks  
+
+## 🧮 Mathematical Framework
+
+### State Space Representation
+For atmospheric system with state vector x(t):
+
+dx/dt = f(x,t) + u(t)
+
+Where:
+- f(x,t) = natural atmospheric dynamics
+- u(t) = control perturbation (our "nudge")
+
+---
+
+### 🎯 Control Objective
+We minimize the total cost of control over a prediction horizon.  
+The objective balances two competing goals:  
+1. Keep the system state near safe targets  
+2. Minimize perturbation energy  
+
+**Discrete formulation (screenshot reference):**
+
+min Σ (u_t^2 + λ Σ penalty_t,j(x_t)),   t = 1...T
+
+where:
+- u_t = ||δx_t||₂  (perturbation magnitude at time t)  
+- penalty_t,j(x_t) = deviation of state variable j from bounds [l_j, h_j]  
+- λ = trade-off weight between control energy and constraint enforcement  
+- u_t ≤ D_max (cap to avoid unrealistic forcing)  
+
+**Continuous formulation (control theory form):**
+
+J = ∫ [ Q·(x - x_target)² + R·u² ] dt
+
+where:
+- Q = state deviation penalty  
+- R = control effort penalty  
+- x_target = desired atmospheric state  
+
+---
+
+### 🌪️ Perturbation Amplification
+Atmospheric dynamics naturally amplify small nudges:
+
+||δx(t)|| ≈ ||δx(0)|| · e^(λt)
+
+where:
+- λ = leading Lyapunov exponent (LLE)  
+- Implication: well-timed micro-nudges can have macro-scale impacts
+
+
+
+
+
+
 
 ## 🧮 Mathematical Framework
 
