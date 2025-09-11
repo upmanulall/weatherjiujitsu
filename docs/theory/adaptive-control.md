@@ -41,9 +41,9 @@ Adaptive control theory provides the framework for real-time weather interventio
 
 ### State Space Representation
 For atmospheric system with state vector x(t):
-
+```
 dx/dt = f(x,t) + u(t)
-
+```
 Where:
 - f(x,t) = natural atmospheric dynamics
 - u(t) = control perturbation (our "nudge")
@@ -57,9 +57,9 @@ The objective balances two competing goals:
 2. Minimize perturbation energy  
 
 **Discrete formulation (screenshot reference):**
-
+```
 min Σ (u_t^2 + λ Σ penalty_t,j(x_t)),   t = 1...T
-
+```
 where:
 - u_t = ||δx_t||₂  (perturbation magnitude at time t)  
 - penalty_t,j(x_t) = deviation of state variable j from bounds [l_j, h_j]  
@@ -67,9 +67,9 @@ where:
 - u_t ≤ D_max (cap to avoid unrealistic forcing)  
 
 **Continuous formulation (control theory form):**
-
+```
 J = ∫ [ Q·(x - x_target)² + R·u² ] dt
-
+```
 where:
 - Q = state deviation penalty  
 - R = control effort penalty  
@@ -79,71 +79,13 @@ where:
 
 ### 🌪️ Perturbation Amplification
 Atmospheric dynamics naturally amplify small nudges:
-
+```
 ||δx(t)|| ≈ ||δx(0)|| · e^(λt)
-
+```
 where:
 - λ = leading Lyapunov exponent (LLE)  
 - Implication: well-timed micro-nudges can have macro-scale impacts
 
-
-
-
-
-
-
-## 🧮 Mathematical Framework
-
-### State Space Representation
-For atmospheric system with state vector **x(t)**:
-
-```
-dx/dt = f(x,t) + u(t)
-```
-
-Where:
-- `f(x,t)` = natural atmospheric dynamics
-- `u(t)` = control perturbation (our "nudge")
-
-### 🎯 Control Objective  
-
-We minimize the **total cost** of control over a prediction horizon. The objective balances two competing goals:  
-1. **Keep the system state near safe targets**  
-2. **Minimize perturbation energy**  
-
-**Discrete formulation (screenshot reference):**  
-
-\[
-\min_{\delta x_t} \; \sum_{t=1}^T \; u_t^2 \;+\; \lambda \sum_{j=1}^3 penalty_{t,j}(x_t)
-\]
-
-- \( u_t = \|\delta x_t\|_2 \): perturbation magnitude at time \(t\)  
-- \( penalty_{t,j}(x_t) \): deviation of state variable \(j\) from prescribed bounds \([l_j, h_j]\)  
-- \( \lambda \): trade-off weight between control energy and constraint enforcement  
-- Perturbations capped by \( D_{max} \) to prevent unrealistic forcing  
-
-**Continuous formulation (control theory form):**  
-
-\[
-J = \int \Big[ Q(x - x_{target})^2 \;+\; R \cdot u^2 \Big] \, dt
-\]
-
-- \( Q \): state deviation penalty  
-- \( R \): control effort penalty  
-- \( x_{target} \): desired atmospheric state  
-
----
-
-### 🌪️ Perturbation Amplification  
-
-Atmospheric dynamics naturally amplify small nudges:  
-
-\[
-\|\delta x(t)\| \;\approx\; \|\delta x(0)\| \cdot e^{\lambda t}
-\]
-
-- \( \lambda \): leading Lyapunov exponent (LLE)  
-- Implication: **well-timed micro-nudges can have macro-scale impacts**  
 
 ## 🔬 Research Advances
 
