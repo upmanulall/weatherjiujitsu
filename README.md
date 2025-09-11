@@ -18,7 +18,7 @@ This project is led by [Prof. Upmanu Lall](https://en.wikipedia.org/wiki/Upmanu_
 ## 🚀 Quick Start
 
 - **📖 [Read the Full Documentation](https://github.com/upmanulall/weatherjiujitsu/blob/main/docs/README.md)** - Complete research overview
-- **🔬 [Browse Research Papers](./publication/)** - Nature perspective paper and technical publications  
+- **🔬 [Browse Research Papers](./publication/)** - Perspective paper and technical publications  
 - **📊 [View Project Timeline](./TIMELINE.md)** - Research roadmap and milestones
 - **🤝 [Contribute to Research](./CONTRIBUTING.md)** - Join our collaborative effort
 
