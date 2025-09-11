@@ -48,21 +48,18 @@
 ---
 
 ## Ongoing Work
- - 🔬 **[Weather Jiu-Jitsu: Climate Adaptation for the 21st Century](https://arxiv.org/abs/2508.09376)**  
-  This perspective proposes a new paradigm for climate adaptation. As extreme climate events intensify, traditional infrastructure and mitigation strategies are proving inadequate. We introduce Weather Jiu-Jitsu—a novel approach that exploits the chaotic dynamics of weather systems to subtly redirect or weaken destructive events using precisely timed, low-energy interventions.
-<p align="center">
-  <img src="./media/AR_Steering_Visuals.png" width="500"/>
-</p>
-  This vision blends adaptive chaos control theory with advances in observation, forecasting, and intervention technologies, laying the groundwork for a nature-assisted global infrastructure to confront 21st-century climate risks.
 
-- 🔬 **[Weather Jiu-Jitsu: Climate Adaptation for the 21st Century](https://arxiv.org/abs/2508.09376)**  
-  This perspective proposes a new paradigm for climate adaptation. As extreme climate events intensify, traditional infrastructure and mitigation strategies are proving inadequate. We introduce Weather Jiu-Jitsu—a novel approach that exploits the chaotic dynamics of weather systems to subtly redirect or weaken destructive events using precisely timed, low-energy interventions.
-<p align="center">
-  <img src="./media/AR_Steering_Visuals.png" width="500"/>
-</p>
-  This vision blends adaptive chaos control theory with advances in observation, forecasting, and intervention technologies, laying the groundwork for a nature-assisted global infrastructure to confront 21st-century climate risks.
-  
----
+- 🔬 **Foundation-Model Testbed for Controlled Perturbations in Tropical Cyclones & Hard Freezes (with Sensitivity Analysis)**  
+  We’re building a lightweight testbed to probe how small, targeted nudges affect extreme-weather evolution in foundation models. The pipeline runs offline rollouts, injects constrained perturbations (pressure/temperature/moisture/flow proxies), and measures downstream changes in track, intensity, and impact proxies for (a) tropical cyclones and (b) hard freeze outbreaks. A systematic sensitivity sweep ranks variables, times, and locations by control leverage and robustness.  
+  - **Goal:** Identify “high-leverage, low-energy” perturbation windows.  
+  - **Methods:** Encoder feature hooks, ensemble rollouts, causal/attribution metrics, ablation & Sobol sensitivity.  
+  - **Outputs:** Playbooks of effective nudge patterns + reproducible notebooks and evaluation dashboards.  
+
+- 🔬 **Latent-State & Instability Triggers for Adaptive Chaos Control in Seasonal Lorenz-84**  
+  We extend our Weather Jiu-Jitsu (WJJ) framework to a seasonally forced L84, using latent-state regimes and local instability cues to trigger minimal-energy control. Hidden-state models (e.g., NHMM-style clustering on trajectories) define “danger zones,” while local Lyapunov and Jacobian diagnostics flag imminent transitions. When triggered, an optimizer applies bounded nudges that keep ∣y∣+∣z∣ and jet-eddy energies within safe envelopes across varying seasonal forcing F.  
+  - **Goal:** Prevent entry into dangerous regimes and damp incipient eddies with minimal intervention.  
+  - **Methods:** Regime discovery, LLE/instability scoring, constrained optimization, season-by-season benchmarking.  
+  - **Outputs:** Benchmarks of trigger efficacy, control-energy budgets, and guidance for mapping to real-model encoders.  
 
 ### 📊 Conference Posters & Abstracts
 
