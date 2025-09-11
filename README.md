@@ -94,6 +94,20 @@
 
 ---
 
+## 🌟 Join the Movement
+
+Weather Jiu-Jitsu represents a fundamental shift in how humanity approaches extreme weather. By contributing to this research, you're helping develop capabilities that could save thousands of lives and prevent billions in damages.
+
+**Every contribution matters** - whether you're a world-class atmospheric scientist or an undergraduate student, your unique perspective and skills can advance our understanding and capabilities.
+
+**Ready to contribute?** 
+1. Read our [research overview](https://qhuang62.github.io/weatherjiujitsu)
+2. Browse current [issues](https://github.com/qhuang62/weatherjiujitsu/issues) and [discussions](https://github.com/qhuang62/weatherjiujitsu/discussions)  
+3. Contact us at qhuang62@asu.edu to discuss your ideas
+4. Join our community and help transform weather science
+
+---
+
 ## 📚 How to Cite
 
 We invite collaboration to develop Weather Jiu Jitsu as a community research platform.
