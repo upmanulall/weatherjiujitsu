@@ -56,12 +56,14 @@
   - **Outputs:** Playbooks of effective nudge patterns + reproducible notebooks and evaluation dashboards.  
 
 - 🔬 **Latent-State & Instability Triggers for Adaptive Chaos Control in Seasonal Lorenz-84**  
-  We extend our Weather Jiu-Jitsu (WJJ) framework to a seasonally forced L84, using latent-state regimes and local instability cues to trigger minimal-energy control. Hidden-state models (e.g., NHMM-style clustering on trajectories) define “danger zones,” while local Lyapunov and Jacobian diagnostics flag imminent transitions. When triggered, an optimizer applies bounded nudges that keep ∣y∣+∣z∣ and jet-eddy energies within safe envelopes across varying seasonal forcing F.  
+  We extend our Weather Jiu-Jitsu framework to a seasonally forced Lorenz 84, using latent-state regimes and local instability cues to trigger minimal-energy control. Hidden-state models define “danger zones,” while local Lyapunov exponent diagnostics flag imminent transitions. When triggered, an optimizer applies bounded nudges that keep eddy energy within safe envelopes across varying seasonal forcing. The result may serve as a starting point for future foundation model pertubation.
   - **Goal:** Prevent entry into dangerous regimes and damp incipient eddies with minimal intervention.  
-  - **Methods:** Regime discovery, LLE/instability scoring, constrained optimization, season-by-season benchmarking.  
+  - **Methods:** Regime discovery, constrained optimization, season-by-season benchmarking.  
   - **Outputs:** Benchmarks of trigger efficacy, control-energy budgets, and guidance for mapping to real-model encoders.  
 
-### 📊 Conference Posters & Abstracts
+---
+
+## 📊 Conference Posters & Abstracts
 
 - 📍 **[AGU 2024 Poster – Investigating Adaptive Chaos Control for Mitigating Weather Extremes](./publication/AGU-poster-2024.pdf)**
   This poster introduces the concept of adaptive chaos control as a potential method for weather modification.
