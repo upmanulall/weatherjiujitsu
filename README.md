@@ -115,7 +115,7 @@ Please cite Weather Jiu-Jitsu if you use or build upon this work:
 
 ```bibtex
 @article{lall2025weatherjiujitsu,
-  author = {Lall, Upmanu and Liu, Moyan and QIN},
+  author = {Lall, Upmanu and Liu, Moyan and Qin, Huang},
   title = {Weather Jiu-Jitsu: Climate Adaptation for the 21st Century},
   year = {2025},
   note = {Preprint available at GitHub}
