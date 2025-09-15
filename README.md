@@ -34,7 +34,7 @@ This project is led by [Prof. Upmanu Lall](https://en.wikipedia.org/wiki/Upmanu_
 </p>
   This vision blends adaptive chaos control theory with advances in observation, forecasting, and intervention technologies, laying the groundwork for a nature-assisted global infrastructure to confront 21st-century climate risks.
 
-- 🌪️ **[Adaptive Chaos Control of Weather Extremes: Demonstrating “Weather Jiu-Jitsu” in Idealized Models](./publication/control-paper.pdf)**  
+- 🌪️ **[Adaptive Chaos Control of Weather Extremes: Demonstrating “Weather Jiu-Jitsu” in Idealized Models](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-3997/)**  
   We develop and test an optimal control framework for mitigating extreme weather in simplified atmospheric systems. Using Lorenz 63 and Lorenz 84 models, we show that small perturbations, guided by local Lyapunov exponents and ensemble forecasts, can keep weather trajectories within safe boundaries while minimizing energy use.
 
   Control strategies are robust to noise and uncertainty, demonstrating the feasibility of real-time adaptive interventions in chaotic systems. These results provide a foundation for scaling Weather Jiu-Jitsu to more realistic atmospheric models.
