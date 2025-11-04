@@ -101,7 +101,7 @@ This project is led by [Prof. Upmanu Lall](https://en.wikipedia.org/wiki/Upmanu_
 
 ---
 
-## 🌟 Join the Movement
+## 🌟 Join the Research
 
 Weather Jiu-Jitsu represents a fundamental shift in how humanity approaches extreme weather. By contributing to this research, you're helping develop capabilities that could save thousands of lives and prevent billions in damages.
 
