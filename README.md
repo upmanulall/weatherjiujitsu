@@ -51,8 +51,8 @@ This project is led by [Prof. Upmanu Lall](https://en.wikipedia.org/wiki/Upmanu_
 
 ## Ongoing Work
 
-- 🔬 **Foundation-Model Testbed for Controlled Perturbations in Tropical Cyclones & Hard Freezes (with Sensitivity Analysis)**  
-  We’re building a lightweight testbed to probe how small, targeted nudges affect extreme-weather evolution in foundation models. The pipeline runs offline rollouts, injects constrained perturbations (pressure/temperature/moisture/flow proxies), and measures downstream changes in track, intensity, and impact proxies for (a) tropical cyclones and (b) hard freeze outbreaks. A systematic sensitivity sweep ranks variables, times, and locations by control leverage and robustness.  
+- 🔬 **Foundation-Model Testbed for Controlled Perturbations in Tropical Cyclones, Hard Freezes and Atmospheric Rivers (with Sensitivity Analysis)**  
+  We’re building a lightweight testbed to probe how small, targeted nudges affect extreme-weather evolution in foundation models. The pipeline runs offline rollouts, injects constrained perturbations (pressure/temperature/moisture/flow proxies), and measures downstream changes in track, intensity, and impact proxies for (a) tropical cyclones, (b) hard freeze outbreaks and (c) atmospheric river. A systematic sensitivity sweep ranks variables, times, and locations by control leverage and robustness.  
   - **Goal:** Identify “high-leverage, low-energy” perturbation windows.  
   - **Methods:** Encoder feature hooks, ensemble rollouts, causal/attribution metrics, ablation & Sobol sensitivity.  
   - **Outputs:** Playbooks of effective nudge patterns + reproducible notebooks and evaluation dashboards.  
@@ -67,12 +67,6 @@ This project is led by [Prof. Upmanu Lall](https://en.wikipedia.org/wiki/Upmanu_
 
 ## 📊 Conference Posters & Abstracts
 
-- 📍 **[AGU 2024 Poster – Investigating Adaptive Chaos Control for Mitigating Weather Extremes](./publication/AGU-poster-2024.pdf)**
-  This poster introduces the concept of adaptive chaos control as a potential method for weather modification.
-
-  It explores how small, targeted perturbations—guided by Lyapunov exponents—can influence mid-latitude atmospheric circulation to reduce flood and drought risks. The work proposes a shift from traditional infrastructure toward dynamic interventions.
-
----
 
 - 📍 **[AGU 2025 Abstracts](./publication/AGU-poster-2025)**  
   Abstracts submitted to AGU 2025 explore Weather Jiu-Jitsu strategies across foundational theory, idealized and DL-based modeling, tropical cyclone and AR control, and seasonal regime dynamics.
@@ -100,6 +94,14 @@ This project is led by [Prof. Upmanu Lall](https://en.wikipedia.org/wiki/Upmanu_
   Presents Weather Jiu-Jitsu as an alternative to traditional flood infrastructure, exploring how small, well-timed perturbations to atmospheric circulation—supported by idealized models and deep learning emulators—could reduce the intensity or reroute flood-producing storms to mitigate impacts.
 
 ---
+
+- 📍 **[AGU 2024 Poster – Investigating Adaptive Chaos Control for Mitigating Weather Extremes](./publication/AGU-poster-2024.pdf)**
+  This poster introduces the concept of adaptive chaos control as a potential method for weather modification.
+
+  It explores how small, targeted perturbations—guided by Lyapunov exponents—can influence mid-latitude atmospheric circulation to reduce flood and drought risks. The work proposes a shift from traditional infrastructure toward dynamic interventions.
+
+---
+
 
 ## 🌟 Join the Research
 
